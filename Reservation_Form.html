@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assingment3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Reservation Form</h1>
+      <fieldset>
+        <label
+          >Name*
+          <input required type="text" placeholder="Name" name="name" />
+        </label>
+        <br /><br />
+
+        <label>Email*</label>
+        <input
+          required
+          type="email"
+          placeholder="Example@gmail.com"
+          name="email"
+        /><br /><br />
+
+        <label>Room Type</label>
+        <select>
+          <option selected value="select">Select</option>
+          <option value="Single">Single</option>
+          <option value="Double">Double</option>
+          <option value="Queen">Queen</option>
+          <option value="King">King</option>
+          <option value="Studio">Studio</option>
+        </select>
+        <br /><br />
+
+        <label>Arrival Date*</label>
+        <input required type="date" name="arrival date" /><br /><br />
+
+        <label>Departure Date*</label>
+        <input required type="date" name="departure date" /><br /><br />
+
+        <label>Number of Geuests*</label>
+        <input required type="number" name="nofgeuest" placeholder="0" />
+        <br /><br />
+
+        <label>Free Pickup</label>
+        <input type="radio" name="freepickup" value="Yes" />
+        <label for="Yes">Yes</label>
+        <input type="radio" name="freepickup" value="No" />
+        <label for="No">No</label><br /><br />
+
+        <label>Flight Number</label>
+        <input
+          type="text"
+          maxlength="14"
+          placeholder="Flight Number"
+        /><br /><br />
+
+        <label for="Special Request">Special Requests</label>
+        <textarea
+          name="Special Request"
+          cols="30"
+          rows="4"
+          placeholder="Type Here"
+        ></textarea
+        ><br /><br />
+
+        <button class="button">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
